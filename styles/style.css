@@ -1,0 +1,169 @@
+
+/*Cores de fundo*/
+/*Cor 1 - Cabeçalho, rodapé e botao github*/
+footer,header,.botao:hover{
+   /*background-image: linear-gradient(135deg, #333333 0%, #555555 50%);*/
+  background-image: linear-gradient(135deg, #0B1026 0%, #233163 100%);
+}
+/*Cor 2 - Base*/
+body{
+  background: linear-gradient(135deg, #FFF3E0, #F9F7F1);
+}
+/*Cor dos botoes*/
+.sumario,.instagram,.whatsapp{
+  background: rgba(255, 255, 255, 0.1) !important; 
+  color: #ffffff !important;
+}
+.botao{
+   background: rgba(255, 255, 255, 0.1) !important; 
+  color: #0A192F !important;  
+}
+.botao:hover{
+  color: #ffffff !important;
+   background: #0B1026 !important;
+
+}
+/*Cor dos botoes quando são selecionados*/
+.sumario:hover,.instagram:hover,.whatsapp:hover {
+  background: #ffffff !important;
+  color: #0A192F !important;  
+}
+/* 1. O SEGREDO: Aplica o comportamento correto em TODOS os elementos do site */
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* 2. Configurações da base da página */
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+nav {
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+  flex-wrap: nowrap;
+  gap: 15px; 
+  padding: 10px;
+  width: 100%;             
+}
+@media (min-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+}
+.sumario,.instagram,.whatsapp,.botao{
+  border: 1px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 14px;
+   text-align: center;
+     max-width: 220px;
+  transition: all 0.25s ease-in-out;  
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* O que acontece quando passa o mouse (ou clica no celular) */
+.sumario:hover,.instagram:hover,.whatsapp:hover,.botao:hover{
+  transform: translateY(-3px);   
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25); 
+}
+.botao, .whatsapp, .instagram {
+  margin: 10px auto; /* Adicionado 10px acima e abaixo para os botões do footer não colarem */
+  display: block;
+}
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Faz o corpo ter NO MÍNIMO o tamanho da tela */
+}
+
+header {
+  top: 0;
+  position: sticky;
+  margin: 0;
+  z-index: 9999;
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* O TRUQUE ESTÁ AQUI: O main vai empurrar o footer para o final da página */
+main {
+  max-width: 800px;
+  width: 100%; /* Garante que ele use o espaço disponível */
+  flex: 1;     /* Faz o main "esticar" e empurrar o footer para o rodapé */
+}
+
+.texto {
+  margin: 0;
+  text-align: center;
+  padding: 25px 15px 10px 15px;
+  color: white;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Fontes modernas de sistema */
+  font-size: 24px;       /* Tamanho ideal para destacar o nome */
+  font-weight: 700;      /* Deixa o nome em negrito marcante */
+  letter-spacing: -0.5px; /* Junta um pouquinho as letras (estilo premium) */
+}
+
+.secoes h3 {
+  display: flex;
+  align-items: center; /* Alinha o ícone e o texto perfeitamente pelo centro vertical */
+  margin-bottom: 15px; /* Dá um espacinho saudável entre o título e o texto do parágrafo */
+  color: #0A192F;      /* Usa o azul-marinho nos títulos para ornar com o cabeçalho */
+}
+.secoes {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  background: white;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.botao {
+  color:white;
+}
+/* desativado as cores personalizadas*/
+.whatsapp, .instagram{
+  color: black;
+}
+
+
+footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 10px 20px 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+/* Troque o antigo #icone, #imagem por isso: */
+.icone-botao, .imagem-secao {
+  margin: 0 10px;
+}
+.icone-botao {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle; /* Alinha o ícone no meio do texto do botão */
+}
+.profisao{
+   text-align: center;
+   color: whitesmoke;
+   margin: 0;
+   padding: 0;
+}
